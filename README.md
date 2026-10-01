@@ -21,9 +21,17 @@ Yes lAmp is set up
 6. Test all of this locally.
 7. However you have your SFTP set up, upload the pages to your site, and fill out information in the forms.html and hit submit
 8. Do you see results in the submit.html file? Why or why not? Do you see results in the URL bar? Why does this happen?
+I was directed to the submit page but it still had the same content and there was no change. The results changed the url so it was sent to the server and not actually any change on the actual page. The reason why `submit.html` didnt change was because it is a static file.
+
 9. Describe in a few sentences how the html form works.
+In `form.html` the action says where to send the data I just put in.  The method says how (through a GET request). Each of the inputs becomes a label for the answer I provided.
+
 10. What do GET and POST mean in this context?
+GET puts the data in the url and post sends it in the request body so its not in the url, this is usually done to keep sensitive data out of the address bar
+
 11. What would we need to do to make the submit.html page display what was filled out in the form?
+There needs to be some sort of code that reads the data that I submitted and then writes them to the page. Reading ahead, the PHP seems to be the thing that does it.
+
 12. Add code to make the submit page display the form information, then upload it and check that it works.
     HINT: our server runs **PHP**, so make the page a PHP page:
     - Rename `submit.html` to `submit.php`, and point the form's `action` at `submit.php`.
