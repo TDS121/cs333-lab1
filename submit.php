@@ -22,14 +22,14 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="form.html">Form</a>
-        <a href="submit.html">Submit</a>
+        <a href="submit.php">Submit</a>
     </nav>
     <div class="container">
         <h1>Form Submission Results</h1>
         <div id="result">
-            <p><strong>Name:</strong> <code>Your Name will appear here</code></p>
-            <p><strong>Email:</strong> <code>Your Email will appear here</code></p>
-            <p><strong>Message:</strong> <code>Your Message will appear here</code></p>
+            <p>Name: <?php echo htmlspecialchars($_POST['name'] ?? ''); ?></p>
+            <p>Email: <?php echo htmlspecialchars($_POST['email'] ?? ''); ?></p>
+            <p>Message: <?php echo htmlspecialchars($_POST['message'] ?? ''); ?></p>
         </div>
     </div>
 </body>
