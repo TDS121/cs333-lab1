@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Submission</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
 
         .container {
             max-width: 600px;
@@ -19,13 +16,14 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
+    <h1>Form Submission Results</h1>
+    <nav class="site-nav">
+        <a href="../">← Home</a>
+        <a href="index.html">Lab 1</a>
         <a href="form.html">Form</a>
         <a href="submit.php">Submit</a>
     </nav>
     <div class="container">
-        <h1>Form Submission Results</h1>
         <div id="result">
             <p>Name: <?php echo htmlspecialchars($_POST['name'] ?? ''); ?></p>
             <p>Email: <?php echo htmlspecialchars($_POST['email'] ?? ''); ?></p>

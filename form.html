@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Web Form</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
 
         form {
             max-width: 600px;
@@ -44,12 +41,13 @@
 </head>
 
 <body>
-<nav>
-  <a href="index.html">Home</a>
+<h1>Contact Us</h1>
+<nav class="site-nav">
+  <a href="../">← Home</a>
+  <a href="index.html">Lab 1</a>
   <a href="form.html">Form</a>
   <a href="submit.php">Submit</a>
 </nav>
-    <h1>Contact Us</h1>
     <form action="submit.php" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
